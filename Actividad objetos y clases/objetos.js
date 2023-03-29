@@ -53,7 +53,7 @@ const  PC= {
         }
     }
     
-    const CompAsus = new Computador({ tipo:'Laptop', Marca:'Asus',IdProducto:'1222345423', TiempoDeEncendido:12 })
+    const CompAsus = new Computador({ tipo:'Laptop', Marca:'Asus',IdProducto:'1222345423', TiempoDeEncendido:10,CPU:"Ryzen 5 4300U" })
     console.log(CompAsus);
     console.log(CompAsus.Encendido())
  
@@ -64,4 +64,4 @@ const  PC= {
         console.log(claseComputador)
     }
     
-    ObtenerInformacion({ Objeto:PC, claseComputador:CompAsus })
+    ObtenerInformacion({ Objeto:PC, claseComputador:CompAsus.Encendido() })
